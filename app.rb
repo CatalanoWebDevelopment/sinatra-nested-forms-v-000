@@ -15,7 +15,8 @@ module FormsLab
       @pirate = Pirate.new(params[:pirate])
 
       params[:pirate][:ships].each do |info|
-        S
+        Ship.new(info)
+      end
       erb :'/pirates/show'
     end
 
