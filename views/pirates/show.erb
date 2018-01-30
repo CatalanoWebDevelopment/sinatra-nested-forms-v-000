@@ -4,14 +4,16 @@
 <p>Pirate Height: <%= @pirate.height %></p>
 
 <h2>Their First Ship!</h2>
-<p>Ship Name: </p>
+<% @ships.each do |ship| %>
+
+<p>Ship Name: <%= ship.name %> </p>
 <p>Ship Type: </p>
 <p>Ship Booty: </p>
 
 
 <h2>Their Second Ship!</h2>
-<% @ships.each do %>
 <p>Ship Name: </p>
 <p>Ship Type: </p>
 <p>Ship Booty: </p>
+
 <% end %>
